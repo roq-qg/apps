@@ -1,0 +1,19 @@
+Field Name,Data Type,Description,Example
+patient_id,string,Assigned id for each patient. Each id is unique,bab43415-d413-40be-a4c0-2c40a52afe6a
+cancer,string,"Type of cancer that the patient is diagnosed with. Cancer types include Colorectal, Endometrial, Kidney, Lung,  and Prostate ",lung
+gender,string,Patient's Gender,male
+year_of_birth,string,Patient's year of birth,1958
+race,string,Patient's race,white
+vital_status,string,Patient's status of being alive or dead,Dead
+ethnicity,string,Patient's ethnicity (hispanic/latino vs. not hispanic/latino),not hispanic or latino
+year_of_diagnosis,string,Year that patient was diagnosed with cancer,2009
+primary_diagnosis,string,Specific cancer diagnosis of the patient,"Adenocarcinoma, NOS"
+tumor_stage,string,Tumor stage of the cancer,stage ib
+age_at_diagnosis,string,Patient's age at diagnosis in number of days,18856
+prior_treatment,string,Whether the patient had treatment prior to being diagnosed,No
+tissue_or_organ_of_origin,string,Origin of the tumor specimen,"Upper lobe, lung"
+prior_malignancy,string,Whether the patient had a malignancy prior to being diagnosed,no
+ajcc_pathologic_stage,string,The pathological stage is based on how different from normal the cells extracted from a tissue sample during surgery or biopsy look under a microscope,Stage IB
+site_of_resection_or_biopsy,string,Location of the resection or biopsy site,"Upper lobe, lung"
+treatment_type,string,Treatment that the patient underwent ,"Radiation Therapy, NOS"
+treatment_or_therapy,string,Whether the patient underwent treatment or therapy,no
