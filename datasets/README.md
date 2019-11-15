@@ -1,19 +1,20 @@
 
-# Datasets
 
-There are three synthetic datasets that were generated with different criteria. The difference between the datasets are the levels of noise, and mislabeled data. Dataset1 does not have noise added and does not have any mislabeling. Dataset2 has noise added. Dataset3 has noise added and mislabeling. 
+# Dataset
 
-ds1: No Noise
+The dataset consists of a large number of samples from https://portal.gdc.cancer.gov/  and each sample consists of a large number of absolute expression values of microRNAs (miRNAs). miRNAs are small non-coding RNA molecules that are involved in the silencing or down-regulation of a variety of genes, including oncogenic and tumor suppressor genes. In general, a high expression of a miRNA indicates a higher concentration and thus a higher regulatory impact. Each sample is also labeled with a clinical diagnosis. In total, there are 5 different cancer entities in the dataset.
 
-ds2: Noise
-
-ds3: Noise + Mislabeling
 
 ### Interpreting the Data
 
 
 ```python
-Each patient has a mutation count associated with the gene, location and type of mutation in the lefthand columns. If a cell contains a number such as '103' and the left-hand column contains Gene:2, Location 200, Type: SNP, then this means that there were 103 SNP mutations found at Gene 2, genomic location 200. 
-There are also data files containining clinical and lab data with information about the patient and details about the extraction as well as whether the patient is diagnosed as a cancer or control
+The "miRNA_counts.csv" file contains the data described above. Each patient has a count associated with the expression of miRNA. Each column in the file except for the first represents a feature, "Reads per million miRNA mapped", and each row represents a patient/sample. The data is already normalized. There is also a data file containining clinical information labeled "clinical.csv" about each patient such as details about their cancer type, diagnosis, and tumor. Finally, there is a data dictionary labeled "data_dictionary.csv" which describes all the data in the clinical file. 
+
+```
+
+
+
+```python
 
 ```
